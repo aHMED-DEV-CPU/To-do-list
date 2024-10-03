@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TO do list</title>
+</head>
+
+<body>
+    <!-- list container -->
+    <div class="container  my-5 bg-white rounded-2 shadow-lg" id="listContainer">
+        <h1 class=" text-center py-2">
+            <i class="fa-solid fa-book"></i> <span>TO DO LIST</span>
+        </h1>
+        <div class="  mx-auto position-relative my-4 add inputHolder">
+            <input type="text" placeholder="Add to your list" class="w-100 rounded-pill" id="listInput">
+            <button type="button" class="position-absolute rounded-pill" id="add">Add</button>
+        </div>
+        <ul class=" list-unstyled d-flex flex-column" id="tasksContainer">
+        </ul>
+        <div class="  d-flex justify-content-center py-4 d-none" id="deleteAll"><button class=" btn btn-danger">Delete
+                All</button></div>
+
+        <div class=" position-absolute" id="alertBox">
+
+        </div>
+    </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
